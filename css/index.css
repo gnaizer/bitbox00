@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed'); body {
+    max-width: 1020px;
+    margin: 0 auto;
+    background-image: url(../img/background.jpg);
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.top-block {
+    cursor: pointer;
+}
+
+.headertop {
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.earphone {
+    margin-top: 2px;
+}
+
+.line {
+    background-color: #fff;
+}
+
+.headerbottom {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.yellownews {
+    color: #f6a800;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li {
+    font-size: 10px;
+    list-style-type: none;
+}
+
+li:hover {
+    cursor: pointer;
+    color: #ff6600;
+}
+
+.gamer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../img/under-header.png);
+    height: 60px;
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.myphoto img {
+    height: 38px;
+    margin: 7px 0 0 22px;
+}
+
+.myphoto {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    margin-bottom: 5px;
+}
+
+.myprofile {
+    margin-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0 0 10px;
+}
+
+.myprofile h4, p {
+    margin: 0;
+}
+
+.myprofile p {
+    color: #ff6600;
+    font-size: 9px;
+}
+
+.private-menu {
+    width: 500px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.letter img {
+    height: 19px;
+    margin: 20px 0 0 0px;
+}
+
+.letter {
+    display: flex;
+    flex-direction: row;
+}
+
+.myletters {
+    margin-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0 0 10px;
+}
+
+.myletters h4, p {
+    margin: 0;
+}
+
+.myletters p {
+    font-size: 10px;
+}
+
+.credits img {
+    height: 19px;
+    margin: 20px 0 0 0px;
+}
+
+.credits {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 30px;
+}
+
+.cashmoney {
+    margin-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0 0 10px;
+}
+
+.cashmoney h4, p {
+    margin: 0;
+}
+
+.cashmoney p {
+    font-size: 10px;
+}
+
+.balance img {
+    height: 19px;
+    margin: 20px 0 0 0px;
+}
+
+.balance {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 30px;
+}
+
+.balancemoney {
+    margin-bottom: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0 0 10px;
+}
+
+.balancemoney h4, p {
+    margin: 0;
+}
+
+.balancemoney p {
+    font-size: 10px;
+}
+
+.basket img {
+    height: 42px;
+    margin: 4px 5px 5px 0;
+}
+
+.ratebox {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.ratebox h5 {
+    margin: 0px 45px 0 20px;
+}
+
+.ratebox input[type="radio"] {
+    display: none;
+}
+
+.ratebox label {
+    font-size: 10px;
+    background-image: url(../img/bluebutton.png);
+    background-size: contain;
+    height: 25px;
+    width: 45px;
+    margin: 5px 12px 0 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratebox input[type="radio"]:checked+label {
+    background-image: url(../img/pinkbutton.png);
+    height: 30px;
+    width: 48px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.ratebox input[type="radio"]:checked+label .rate1 {
+    margin-top: 8px;
+}
+
+.table-counter {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+}
+
+.table-counter h5 {
+    margin: 5px 45px 0 20px;
+}
+
+.table-counter input[type="radio"] {
+    display: none;
+}
+
+.table-counter label {
+    font-size: 10px;
+    background-image: url(../img/bluebutton.png);
+    background-size: contain;
+    height: 25px;
+    width: 45px;
+    margin: 5px 12px 0 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-counter input[type="radio"]:checked+label {
+    background-image: url(../img/pinkbutton.png);
+    border-radius: 20px;
+    height: 30px;
+    width: 48px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.table-counter input[type="radio"]:checked+label .rate10 {
+    margin-top: 8px;
+}
+
+section hr {
+    margin-top: 25px;
+}
+
+.create-game-table {
+    background-image: url(../img/blueline.png);
+    background-size: cover;
+    height: 175px;
+    width: auto;
+    margin-top: 30px;
+}
+
+.create-game-table p {
+    color: #fff;
+    font-size: 30px;
+    margin: 0px 0 0 20px;
+    padding-top: 28px;
+}
+
+.table-close {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table-close img {
+    height: 15px;
+    margin: 18px 20px 0 0;
+}
+
+#rate-part-two {
+    background: white url(../img/arrow.png) 98% center no-repeat;
+    border-style: none;
+    color: black;
+    border-radius: 6%;
+    width: 100px;
+    height: 30px;
+    margin: 35px 0 0 33px;
+    -webkit-appearance: none;
+    padding: 0 0 0 10px;
+}
+
+.time-number-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+#table-part-two {
+    background: white url(../img/arrow.png) 98% center no-repeat;
+    border-style: none;
+    color: black;
+    border-radius: 6%;
+    width: 100px;
+    height: 30px;
+    margin: 35px 0 0 0px;
+    -webkit-appearance: none;
+    padding: 0 0 0 10px;
+}
+
+.game-time {
+    margin: 35px 10px 0 0px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.game-time-inp {
+    border-style: none;
+    color: black;
+    border-radius: 6%;
+    width: 40px;
+    height: 30px;
+    padding: 0 0 0 15px;
+    margin: 0 10px 0 10px;
+}
+
+.create-button {
+    background-color: #01122d;
+    background-image: url(../img/creategame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 180px;
+    margin: 28px 20px 0 0px;
+    border-style: none;
+}
+
+.create-own-table {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hall-of-game {
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    margin: 20px 0 0 20px;
+}
+
+.hall-of-game p {
+    color: #8a7bda;
+    margin-left: 18px;
+}
+
+.create-own-table a {
+    color: #fab200;
+    margin-top: 25px;
+}
+
+.hall-number-row-f {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hall-number {
+    height: 80px;
+    width: 190px;
+    margin: 20px 20px 5px 20px;
+    background-color: #131240;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.hall-number-row-s {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hall-number h5 {
+    color: #8a7bda;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.hall-number p {
+    color: white;
+    font-size: 10px;
+}
+
+aside hr {
+    margin: 49px 0 0 0;
+}
+
+.hall-of-game-number {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    margin: 35px 0 0 20px;
+}
+
+.hall-of-game-number p {
+    color: #8a7bda;
+    margin-left: 18px;
+}
+
+.inform-about-hall {
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.your-bet {
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 11px;
+}
+
+.free-slots {
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 11px;
+    margin-left: 50px;
+}
+
+.percent-of-win {
+    width: 160px;
+    height: 50px;
+    color: white;
+    font-size: 11px;
+    margin-left: 50px;
+}
+
+.numb-t-row-s {
+    display: flex;
+    margin: 15px 0 0 10px;
+    color: #694900;
+    font-size: 30px;
+}
+
+.numb-t1 {
+    display: flex;
+    background-image: url(../img/yellowbutton.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 106px;
+    margin: 0 0 0 3px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.numb-t1:focus {
+    background-image: url(../img/pink-button-down.png);
+    border-style: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 106px;
+}
+
+.numb-t2:focus {
+    background-image: url(../img/pinksquarebutton.png);
+    border-style: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 106px;
+}
+
+.numb-t-row-f {
+    display: flex;
+    margin: 5px 0 0 10px;
+    color: #694900;
+    font-size: 30px;
+}
+
+.numb-t2 {
+    display: flex;
+    background-image: url(../img/yellowbutton.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 106px;
+    margin: 0 0 0 3px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.chosen-t {
+    background-image: url(../img/pinksquarebutton.png);
+    border-style: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 106px;
+    margin: 0 0 0 3px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+
+.summmary {
+    display: flex;
+}
+
+.sum {
+    height: 50px;
+    width: 160px;
+    margin: 30px 0 0 20px;
+    color: #8b7cda;
+    font-size: 16px;
+}
+
+.btc {
+    margin: 28px 0 0 5px;
+    color: #f7ab00;
+    font-size: 30px;
+}
+
+footer {
+    height: 100px;
+}
+
+@media only screen and (max-width: 640px) {
+    .burger {
+        display: block;
+        height: 60px;
+        background: url(../img/burger.png) no-repeat 98% center;
+        cursor: pointer;
+        margin: 0px;
+    }
+
+    header nav .logo {
+        text-align: left;
+    }
+
+    header nav ul {
+        overflow: hidden;
+        margin: 0;
+        height: 60px;
+        width: auto;
+    }
+
+    header nav ul.open {
+        height: auto;
+        margin: 0;
+    }
+
+    header nav ul li {
+        display: flex;
+        text-align: center;
+        margin: 60px;
+    }
+
+    .gamer-menu {
+        height: 100%;
+    }
+
+    .private-menu {
+        display: grid;
+        grid-template-areas: "letter" "credits" "balance" "basket";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: 200px;
+    }
+
+    .create-game-table {
+        height: 100%;
+    }
+
+    .time-number-button {
+        display: grid;
+        grid-template-areas: "rate-part-two" "table-part-two" "game-time" "create-button";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    #rate-part-two {
+        margin: 35px 0 0 100px;
+    }
+
+    #table-part-two {
+        margin: 35px 0 0 100px;
+    }
+
+    .create-button {
+        margin: 35px 0 0 70px;
+    }
+}

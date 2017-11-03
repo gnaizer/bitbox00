@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/index.css" type="text/css"/>
+        <link rel="shortcut icon" href="img/moneda-bitcoin.png" type="text/css"/>
+        <title>BitBox</title>
+    </head>
+    <body>
+        <div class="top-block">
+            <header>
+                <div class="headertop" id="example">
+                    <div class="earphone">
+                        <img src="img/earphone.png" alt="earphone">Підтримка 24/7
+                    </div>
+                    <div class="man">
+                        <img src="img/man.png" alt="man">Вхід/Реєстрація
+                    </div>
+                </div>
+                <hr class="line">
+                <div class="headerbottom">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <nav>
+                        <ul class="burger">
+                            <li id="scroll" class="yellownews">НОВИНИ</li>
+                            <li id="scroll">АКАУНТ</li>
+                            <li id="scroll">РОЗІГРАШІ</li>
+                            <li id="scroll">ЗАЛ СЛАВИ</li>
+                            <li id="scroll">ПІДТРИМКА</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section>
+                <div class="gamer-menu">
+                    <div class="myphoto">
+                        <img src="img/photo1.png" alt="profile-photo">
+                        <div class="myprofile">
+                            <h4>BitGamer</h4>
+                            <p>ВАШ ПРОФІЛЬ</p>
+                        </div>
+                    </div>
+                    <div class="private-menu">
+                        <div class="letter">
+                            <img src="img/mail.png" alt="email-icon">
+                            <div class="myletters">
+                                <h4>4 Листа</h4>
+                                <p>прочитати</p>
+                            </div>
+                        </div>
+                        <div class="credits">
+                            <img src="img/coins.png" alt="coins-icon">
+                            <div class="cashmoney">
+                                <h4>1200 Credits</h4>
+                                <p>Конвертувати</p>
+                            </div>
+                        </div>
+                        <div class="balance">
+                            <img src="img/wallet.png" alt="email-icon">
+                            <div class="balancemoney">
+                                <h4>12.78 BTC</h4>
+                                <p>Поповнити баланс</p>
+                            </div>
+                        </div>
+                        <div class="basket">
+                            <img src="img/basket.png" alt="basket">
+                        </div>
+                    </div>
+                </div>
+                <div class="ratebox">
+                    <h5>Ваша ставка-</h5>
+                    <input type="radio" name="rate" value="1BTC" checked/>
+                    <label for="rate1" class="rate1">1 BTC</label>
+                    <input type="radio" name="rate" value="0.5BTC"/>
+                    <label for="rate2" class="rate2">0.5 BTC</label>
+                    <input type="radio" name="rate" value="0.3BTC"/>
+                    <label for="rate3" class="rate3">0.3 BTC</label>
+                    <input type="radio" name="rate" value="0.2BTC"/>
+                    <label for="rate4" class="rate4">0.2 BTC</label>
+                    <input type="radio" name="rate" value="0.1BTC"/>
+                    <label for="rate5" class="rate5">0.1 BTC</label>
+                </div>
+                <div class="table-counter">
+                    <h5>Столів у залі-</h5>
+                    <input type="radio" name="number" value="10" checked/>
+                    <label for="rate10" class="rate10">10</label>
+                    <input type="radio" name="number" value="20"/>
+                    <label for="20rate" class="rate20">20</label>
+                    <input type="radio" name="number" value="30"/>
+                    <label for="rate30" class="rate30">30</label>
+                    <input type="radio" name="number" value="50"/>
+                    <label for="rate50" class="rate50">50</label>
+                    <input type="radio" name="number" value="100"/>
+                    <label for="rate100" class="rate100">100</label>
+                </div>
+                <hr class="line">
+            </section>
+            <section class="create-game-table" id="oncl-close">
+                <div class="table-close">
+                    <p>СТВОРЕННЯ ІГРОВОЇ ЗАЛИ</p>
+                    <img id="close-table" src="img/x.png" alt="x-close">
+                </div>
+                <div class="time-number-button">
+                    <select id="rate-part-two" name="part-two">
+                        <option value="1BTC">1 BTC</option>
+                        <option value="0.5BTC">0.5 BTC</option>
+                        <option value="0.3BTC">0.3 BTC</option>
+                        <option value="0.2BTC">0.2 BTC</option>
+                        <option value="0.1BTC">0.1 BTC</option>
+                    </select>
+                    <select id="table-part-two" name="table-part-two">
+                        <option value="10столів">10 столів</option>
+                        <option value="20столів">20 столів</option>
+                        <option value="30столів">30 столів</option>
+                        <option value="50столів">50 столів</option>
+                        <option value="100столів">100 столів</option>
+                    </select>
+                    <label class="game-time">
+                        Час розіграшу
+            <input class="game-time-inp" type="text" name="time" required pattern="[0-2][0-9]" placeholder="22" title="hours"/>
+                        <input class="game-time-inp" type="text" name="time" required pattern="[0-5][0-9]" placeholder="15" title="minutes"/>
+                    </label>
+                    <input class="create-button" type="button" value="."/>
+                </div>
+            </section>
+            <section class="create-own-table">
+                <div class="hall-of-game">
+                    ІГРОВІ ЗАЛИ
+            <p>НА 20 СЛОТІВ</p>
+                </div>
+                <a href="#your-rate" id="create-g">+Створити власну ігрову залу</a>
+            </section>
+            <aside>
+                <div class="hall-number-row-f">
+                    <div class="hall-number">
+                        <h5>Зал №28</h5>
+                        <p>Слотів вільно: 8 з 20</p>
+                        <p>Розіграш: 24:00</p>
+                    </div>
+                    <div class="hall-number">
+                        <h5>Зал №16</h5>
+                        <p>Слотів вільно: 8 з 20</p>
+                        <p>Розіграш: 19:15</p>
+                    </div>
+                    <div class="hall-number">
+                        <h5>Зал №8</h5>
+                        <p>Слотів вільно: 8 з 20</p>
+                        <p>Розіграш: 13:00</p>
+                    </div>
+                    <div class="hall-number">
+                        <h5>Зал №14</h5>
+                        <p>Слотів вільно: 8 з 20</p>
+                        <p>Розіграш: 13:00</p>
+                    </div>
+                </div>
+                <div class="hall-number-row-s">
+                    <div class="hall-number">
+                        <h5>Зал №28</h5>
+                        <p>Слотів вільно: 8 з 20</p>
+                        <p>Розіграш: 24:00</p>
+                    </div>
+                    <div class="hall-number">
+                        <h5>Зал №16</h5>
+                        <p>Слотів вільно: 8 з 20</p>
+                        <p>Розіграш: 19:15</p>
+                    </div>
+                    <div class="hall-number">
+                        <h5>Зал №8</h5>
+                        <p>Слотів вільно: 8 з 20</p>
+                        <p>Розіграш: 13:00</p>
+                    </div>
+                    <div class="hall-number">
+                        <h5>Зал №14</h5>
+                        <p>Слотів вільно: 8 з 20</p>
+                        <p>Розіграш: 13:00</p>
+                    </div>
+                </div>
+                <hr>
+            </aside>
+        </div>
+        <aside class="type-of-hall">
+            <div class="hall-of-game-number">
+                ІГРОВА ЗАЛА
+            <p>№ 28</p>
+            </div>
+            <div class="inform-about-hall">
+                <div class="your-bet">Зробіть вашу ставку на будь який вільний слот</div>
+                <div class="free-slots">
+                    Слотів вільно: 8
+                <br>Розіграш: 08.07.2017 o 24:00
+            
+                </div>
+                <div class="percent-of-win">Комісія порталу складає 10% від кожного розіграшу</div>
+            </div>
+            <div class="numb-of-table">
+                <div class="numb-t-row-f">
+                    <div class="numb-t1" id="p-but" tabindex="0">1</div>
+                    <div class="chosen-t" id="p-but" tabindex="0">2</div>
+                    <div class="numb-t1" id="p-but" tabindex="0">3</div>
+                    <div class="numb-t1" id="p-but" tabindex="0">4</div>
+                    <div class="numb-t1" id="p-but" tabindex="0">5</div>
+                </div>
+                <div class="numb-t-row-s">
+                    <div class="numb-t2" tabindex="0">6</div>
+                    <div class="numb-t2" tabindex="0">7</div>
+                    <div class="numb-t2" tabindex="0">8</div>
+                    <div class="chosen-t" tabindex="0">9</div>
+                    <div class="numb-t2" tabindex="0">10</div>
+                </div>
+                <div class="summmary">
+                    <div class="sum">Загальна сума вашої ставки на два слоти:</div>
+                    <div class="btc">2 BTC</div>
+                </div>
+        </aside>
+        <footer></footer>
+</div><script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body></html>
