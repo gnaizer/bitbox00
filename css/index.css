@@ -40,7 +40,7 @@
 }
 
 .logo img {
-    height: 40px;
+    height: 50px;
 }
 
 nav ul {
@@ -78,7 +78,7 @@ li:hover {
 .myphoto {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center; 
     margin-bottom: 5px;
 }
 
@@ -144,7 +144,7 @@ li:hover {
 .credits {
     display: flex;
     flex-direction: row;
-    margin: 0 0 0 30px;
+    /*margin: 0 0 0 30px;*/
 }
 
 .cashmoney {
@@ -171,7 +171,7 @@ li:hover {
 .balance {
     display: flex;
     flex-direction: row;
-    margin: 0 0 0 30px;
+    /*margin: 0 0 0 30px;*/
 }
 
 .balancemoney {
@@ -460,7 +460,7 @@ aside hr {
     margin-left: 50px;
 }
 
-.numb-t-row-s {
+.numbertables-row2 {
     display: flex;
     margin: 15px 0 0 10px;
     color: #694900;
@@ -481,7 +481,7 @@ aside hr {
 }
 
 .numb-t1:focus {
-    background-image: url(../img/pink-button-down.png);
+    background-image: url(../img/pinksquarebutton.png);
     border-style: none;
     background-size: contain;
     background-repeat: no-repeat;
@@ -498,7 +498,7 @@ aside hr {
     width: 106px;
 }
 
-.numb-t-row-f {
+.numbertables-row1 {
     display: flex;
     margin: 5px 0 0 10px;
     color: #694900;
@@ -555,12 +555,16 @@ footer {
 }
 
 @media only screen and (max-width: 640px) {
+    .headertop {
+        margin: 8px 8px 0 0;
+    }
+
     .burger {
         display: block;
         height: 60px;
-        background: url(../img/burger.png) no-repeat 98% center;
+        background: url(../img/burger.png) no-repeat 98% top;
         cursor: pointer;
-        margin: 0px;
+        margin: 0 0 0 -150px;
     }
 
     header nav .logo {
@@ -576,25 +580,46 @@ footer {
 
     header nav ul.open {
         height: auto;
-        margin: 0;
+        margin: 0 0 0 -180px;
     }
 
     header nav ul li {
-        display: flex;
+        display: grid;
         text-align: center;
         margin: 60px;
     }
 
+    nav ul li {
+        font-size: 18px;
+    }
+
     .gamer-menu {
+        display: flex;
+        flex-wrap: wrap;
         height: 100%;
     }
 
     .private-menu {
-        display: grid;
-        grid-template-areas: "letter" "credits" "balance" "basket";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         width: 200px;
+        margin-left: 80px;
+    }
+    
+    .myphoto {
+        display: flex;
+        align-items: start;
+    }
+
+    .ratebox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .table-counter {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .create-game-table {
@@ -603,20 +628,53 @@ footer {
 
     .time-number-button {
         display: grid;
-        grid-template-areas: "rate-part-two" "table-part-two" "game-time" "create-button";
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        margin-bottom: 30px;
+    }
+
+    .game-time {
+        margin: 35px 10px 0 30px;
+    }
+
+    .hall-of-game {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hall-of-game p {
+        margin-left: 0;
+    }
+
+    .hall-number-row-f {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .hall-number-row-s {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .numbertables-row1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0 0 20px;
+    }
+
+    .numbertables-row2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0 0 20px;
     }
 
     #rate-part-two {
-        margin: 35px 0 0 100px;
+        margin: 35px 0 0 137px;
     }
 
     #table-part-two {
-        margin: 35px 0 0 100px;
+        margin: 35px 0 0 137px;
     }
 
     .create-button {
-        margin: 35px 0 0 70px;
+        margin: 35px 0 0 100px;
     }
 }
